@@ -38,7 +38,7 @@ fun ThirdView(navController: NavController, opcional:String?) {
         ) {
             TitleView(name = "Third View")
             Text(text = "Parametro enviado: $opcional")
-            MainButton(name = "Home View", backColor = Color.Green, color = Color.White) {
+            MainButton(name = "Home View", backColor = Color.Red, color = Color.White) {
                 navController.navigate("Home") {
                     // pa limpiar la pila e ir home
                     popUpTo("Home") { inclusive = true }
