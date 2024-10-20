@@ -64,8 +64,12 @@ fun ContentDetailView(navController: NavController, id: Int, opcional: String?) 
         }else{
             TitleView(name = opcional.orEmpty())
         }
+        MainButton(name = "Go to the ThirdView", backColor = Color.Red , color =Color.Black ) {
+            navController.navigate("Third/${opcional.orEmpty()}")
+        }
         MainButton(name = "Return home", backColor = Color.Blue, color = Color.White) {
             navController.popBackStack()
+
         }
     }
 }
