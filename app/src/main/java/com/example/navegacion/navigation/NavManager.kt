@@ -24,5 +24,5 @@ fun NavManager(){
             val opcional = it.arguments?.getString("opcional") ?: ""
             DetailView(navController, id, opcional)
         }
-    }
+    }//
 }
